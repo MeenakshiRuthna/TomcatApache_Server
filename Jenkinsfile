@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'Feature1', url: 'https://github.com/MeenakshiRuthna/TomcatApache_Server.git'
+                git branch: 'Feature2', url: 'https://github.com/MeenakshiRuthna/TomcatApache_Server.git'
             }
         }
         stage('Compile') {
