@@ -21,4 +21,10 @@ pipeline {
                 sh "mvn clean package -DskipTests=true"
             }
         }
-       
+        stage('Deploy') {
+            steps {
+                sh "sudo cp target/petclinic.war /opt/apache-tomcat-9.0.65/webapps/"
+            }
+        }
+    }
+}
